@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Обо мне — Виктория</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="top" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top">@mykovsh</a>
+      <div class="nav__links">
+        <a href="#about">Обо мне</a>
+        <a href="#vibe">Вайб</a>
+        <a href="#photos">Фото</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__text">
+        <p class="kicker reveal">личная страница</p>
+
+        <h1 class="h1 reveal">
+          Привет, я <span class="accent">Вика</span>
+        </h1>
+
+        <p class="lead reveal" id="typeTarget" data-text="Креативная, живая, с характером. Люблю разговоры до ночи, музыку и людей, у которых есть цели.">
+          <!-- текст напечатается скриптом -->
+        </p>
+
+        <div class="cta reveal">
+          <a class="btn" href="#contacts">Написать</a>
+          <a class="btn btn--ghost" href="#photos">Смотреть фото</a>
+        </div>
+
+        <div class="mini reveal">
+          <div class="pill">Город: <b>Казань</b></div>
+          <div class="pill">Возраст: <b>21</b></div>
+          <div class="pill">Я за: <b>уважение + юмор</b></div>
+        </div>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="frame">
+          <img class="avatar" src="img/me.jpg" alt="Моё фото">
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <section class="section" id="about">
+      <h2 class="h2 reveal">Обо мне</h2>
+
+      <div class="grid2">
+        <article class="card reveal">
+          <h3 class="h3">Кто я</h3>
+          <p class="muted">
+           Твоя мечта и надежда на совместное будущее
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="h3">Что мне нравится</h3>
+          <ul class="list muted">
+            <li>Прогулки, коддинг, аниме</li>
+            <li>Вкусная еда и места с атмосферой</li>
+            <li>Музыка и путешествия</li>
+          </ul>
+        </article>
+
+        <article class="card reveal span2">
+          <h3 class="h3">Кого я хочу рядом</h3>
+          <p class="muted">
+            Спокойно и честно: адекватность, уважение, чувство юмора, без игр/без грубости.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="vibe">
+      <h2 class="h2 reveal">Мой вайб</h2>
+      <div class="chips">
+        <span class="chip reveal">умная</span>
+        <span class="chip reveal">с юмором</span>
+        <span class="chip reveal">эмоциональная (в хорошем смысле)</span>
+        <span class="chip reveal">люблю движение</span>
+        <span class="chip reveal">не терплю неуважение</span>
+      </div>
+    </section>
+
+    <section class="section" id="photos">
+  <h2 class="h2 reveal">Фото</h2>
+
+  <div class="carousel reveal" data-carousel>
+    <button class="car__btn car__btn--prev" type="button" aria-label="Предыдущее фото">‹</button>
+
+    <div class="car__viewport">
+      <div class="car__track">
+        <img class="car__slide" src="img/1.jpg" alt="Фото 1">
+        <img class="car__slide" src="img/2.jpg" alt="Фото 2">
+        <img class="car__slide" src="img/3.jpg" alt="Фото 3">
+      </div>
+    </div>
+
+    <button class="car__btn car__btn--next" type="button" aria-label="Следующее фото">›</button>
+
+    <div class="car__dots" aria-label="Навигация по фото"></div>
+  </div>
+</section>
+
+    <section class="section" id="contacts">
+      <h2 class="h2 reveal">Контакты</h2>
+
+      <div class="card reveal">
+        <p class="muted" style="margin-top:0">
+          @mykovsh
+        </p>
+
+        <div class="contacts">
+          <a class="contact" href="https://t.me/mykovsh" target="_blank" rel="noreferrer">Telegram</a>
+          <a class="contact" href="https://instagram.com/mykovsh" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="contact" href="mailto:potomyvikusik@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="muted">© <span id="year"></span> @mykovsh</small>
+  </footer>
+</body>
+</html>
